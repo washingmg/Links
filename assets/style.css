@@ -13,7 +13,7 @@
 }
 
 body{
-    background-image: linear-gradient(to top, var(--cor0), var(--cor1));
+    background-color: #00423c;
     margin: auto;
     padding: 90px
     
