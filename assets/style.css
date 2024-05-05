@@ -5,15 +5,16 @@
 
 /* Definição das variáveis de cor e fonte */
 :root {
-    --cor-primaria: #202C39;
-    --cor-secundaria: #6C6E63;
+    --cor-primaria: #03A678;
+    --cor-secundaria: #015f4e;
+    --cor-terciaria: #013838;
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Bungee Spice', sans-serif;
 }
 
 /* Estilo global para o corpo da página */
 body {
-    background-image: linear-gradient(to top, var(--cor-primaria), var(--cor-secundaria));
+    background-image: linear-gradient(to top, var(--cor-primaria), var(--cor-secundaria), var(--cor-terciaria));
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,7 +28,7 @@ body {
 main {
     background-color: rgba(177, 177, 177, 0.8);
     border-radius: 10px;
-    box-shadow: 3px 2px 7px rgba(58, 58, 58, 0.5);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.562);
     max-width: 400px;
     min-height: 400px;
     height: auto;
@@ -38,7 +39,7 @@ main {
 main > h1 {
     color: #e4a000;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(31, 31, 31, 0.5);
+    text-shadow: 1px 1px 2px rgb(7, 7, 7);
     font-weight: bold;
     font-size: 2.5em;
     font-family: var(--fonte-destaque);
@@ -78,18 +79,20 @@ main a:hover {
 }
 
 /* Estilo da lista não ordenada */
-main ul {
-    list-style-type: none;
+main  ul {
+    list-style-position: inside; 
+    list-style-type: '\2714\00A0';
     background-color: rgba(108, 110, 99, 0.43);
     width: 200px;
     border-radius: 10px;
     padding: 10px;
     margin: auto;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 /* Estilo dos itens da lista */
-main li {
+main > li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
