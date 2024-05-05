@@ -15,10 +15,11 @@
 body{
     background-color: #00423c;
     margin: auto;
-    padding-top: 150px;
+    padding-top: 180px;
+ 
+
     
 }
-
 main{
     background-color: rgb(177, 177, 177);
     border-radius: 10px; 
