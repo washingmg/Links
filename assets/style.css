@@ -1,94 +1,108 @@
 @charset "UTF-8";
 
+/* Importar fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
-
-:root{
-    --cor0: #202C39;
-    --cor1: #6C6E63;
- 
+/* Definição das variáveis de cor e fonte */
+:root {
+    --cor-primaria: #202C39;
+    --cor-secundaria: #6C6E63;
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Bungee Spice', sans-serif;
 }
 
-body{
-    background-color: #00423c;
-    margin: auto;
-    padding-top: 180px;
- 
-
-    
+/* Estilo global para o corpo da página */
+body {
+    background-image: linear-gradient(to top, var(--cor-primaria), var(--cor-secundaria));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--fonte-padrao);
 }
-main{
-    background-color: rgb(177, 177, 177);
-    border-radius: 10px; 
-    box-shadow: 3px 2px 7px rgb(58, 58, 58); 
-    margin: auto;
+
+/* Estilo do contêiner principal */
+main {
+    background-color: rgba(177, 177, 177, 0.8);
+    border-radius: 10px;
+    box-shadow: 3px 2px 7px rgba(58, 58, 58, 0.5);
     max-width: 400px;
-    height: 400px;
-    padding: 9.5px;
-    
+    min-height: 400px;
+    height: auto;
+    padding: 20px;
 }
 
-main > h1{
+/* Estilo do título principal */
+main > h1 {
     color: #e4a000;
     text-align: center;
-    text-shadow: 1px 1px 2px rgb(31, 31, 31);
+    text-shadow: 1px 1px 2px rgba(31, 31, 31, 0.5);
     font-weight: bold;
     font-size: 2.5em;
     font-family: var(--fonte-destaque);
-
+    margin-bottom: 20px;
 }
 
-main > p{
-    background-color: rgba(245, 245, 245, 0.534);
-    margin: auto;
-    font-family: var(--fonte-padrao);
+/* Estilo do parágrafo */
+main > p {
+    background-color: rgba(245, 245, 245, 0.8);
     text-align: center;
     color: #00423c;
     border-radius: 10px;
     font-weight: bold;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.226);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     padding: 10px;
+    margin-bottom: 20px;
 }
 
-main > p:hover{
+/* Efeito de hover para o parágrafo */
+main > p:hover {
     background-color: rgb(255, 0, 0);
     color: whitesmoke;
     transition-duration: 1s;
 }
 
-main a{
+/* Estilo dos links */
+main a {
     color: rgba(10, 40, 177, 0.849);
-    margin: auto;
-    font-family: var(--fonte-padrao);
-    text-align: center;
     font-weight: bold;
     text-decoration: none;
 }
 
-main ul{
-    list-style-type: '\2714\00A0';
-    background-color: #6c6e636e;
-    width: 200px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: auto;
-    list-style-position: inside;
-    box-shadow: 3px 3px 5px black;
-}
-
-li img {
-    margin-right: 10px; 
-}
-
-main a{
-    text-decoration: '\00A0';
-}
-
-main a:hover{
+/* Efeito de hover para os links */
+main a:hover {
     color: red;
     text-decoration: underline;
 }
 
+/* Estilo da lista não ordenada */
+main ul {
+    list-style-type: none;
+    background-color: rgba(108, 110, 99, 0.43);
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo dos itens da lista */
+main li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo das imagens dentro dos itens da lista */
+li img {
+    margin-right: 10px;
+    max-width: 24px;
+}
+
+/* Efeito de hover para os itens da lista */
+main li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
